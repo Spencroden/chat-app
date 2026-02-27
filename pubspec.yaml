@@ -1,0 +1,41 @@
+name: chat_app
+description: A Flutter chat app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.0
+  cloud_firestore: ^4.15.0
+  firebase_messaging: ^14.7.0
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.2
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # The tool that replaces the Flutter icon
+  flutter_launcher_icons: ^0.13.1
+
+# Configuration for your new App Icon
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#800080"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  # Registering the assets folder so your app can see the image
+  assets:
+    - assets/images/
